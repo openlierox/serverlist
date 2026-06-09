@@ -6,7 +6,9 @@ add these commands to your crontab, where '3' is the line number inside udpmaste
 this will update your IP address each hour.
 
 ```
-@reboot cd $HOME/serverlist ; ./update-ip.sh 3
+crontab -e
+
+@reboot sleep 30 ; cd $HOME/serverlist ; ./update-ip.sh 3
 3 * * * * cd $HOME/serverlist ; ./update-ip.sh 3
 ```
 
