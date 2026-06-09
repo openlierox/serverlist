@@ -12,4 +12,6 @@ git pull
 
 sed -i "${LINE}s/.*/$PUBLIC_IP/g" udpmasterservers.txt
 
+git commit -a -m "Updated masterserver $LINE"
+
 git push
