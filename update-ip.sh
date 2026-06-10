@@ -10,7 +10,7 @@ echo "My public IP: $PUBLIC_IP"
 
 git pull
 
-sed -i "${LINE}s/.*/$PUBLIC_IP/g" udpmasterservers.txt
+sed -i "${LINE}s/.*/$PUBLIC_IP:23450/g" udpmasterservers.txt
 
 git commit -a -m "Updated masterserver $LINE"
 
