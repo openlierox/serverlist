@@ -8,8 +8,8 @@ this will update your IP address each hour.
 ```
 crontab -e
 
-@reboot sleep 30 ; cd $HOME/serverlist ; ./update-ip.sh 3
-3 * * * * cd $HOME/serverlist ; ./update-ip.sh 3
+@reboot sleep 30 ; cd $HOME/serverlist ; ./update-ip.sh 3 ; ./update-ipv6.sh 4
+3 * * * * cd $HOME/serverlist ; ./update-ip.sh 3 ; ./update-ipv6.sh 4
 ```
 
 To have write acceess to the repository, generate Github personal access token
